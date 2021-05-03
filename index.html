@@ -1,0 +1,271 @@
+
+
+
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cart Page</title>
+    </head>
+    <body class="bg-light">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-10 col-11 mx-auto">
+    <div class="row mt-5 gx-3">
+    <!-- left side div -->
+    <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+        <div class="card p-4">
+            <h2 class="py-4 font-weight-bold">Cart Item 1</h2>
+            <div class="row">
+                <div class="col-md-3 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                  <h6>Single Web Hosting</h6>
+                  <img src="https://img.icons8.com/nolan/96/monitor.png"/>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row gx-1 align-items-center">
+                        <div class="col-md-3 bg-light m-1 shadow">
+                            <center>
+                            <h6>1 month</h6>
+                            <h2>$199</h2>
+                            <h6>/month</h6>
+                            </center>
+                        </div>
+                        <div class="col-md-3 bg-light m-1 shadow">
+                            <center>
+                            <h6>12 month</h6>
+                            <h2>$99</h2>
+                            <h6>/month<h6>
+                            </center>
+                        </div>
+                        <div class="col-md-3 bg-light m-1 shadow">
+                            <center>
+                            <h6>4 year</h6>
+                            <h2>$59</h2>
+                            <h6>/month</h6>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-3">
+                    <ul class = "pagination">
+                        <li class = "page-item"> <button class="page-link" onclick="decreaseValue()">-</button> </li>
+                       
+                        <li class = "page-item active"> <p class="page-link" href="#" id="text-box"> 0 </p> </li>
+                        <li class = "page-item"> <button class="page-link" onclick="increasevalue()"> + </button> </li>
+                    </ul>
+                    </div> 
+                                                        
+                </div>
+                <br>
+                <div class="row">
+                <div class="col-8 d-flex justify-content-between remove_wish">
+                    <button  onclick="remove1()"><i class="fas fa-trash-alt"></i> REMOVE ITEM</button>
+                    <button onclick="wish1()"><i class="fas fa-heart" ></i>MOVE TO WISH LIST </button>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end price_money">
+                    <h3>$<span id="itemval1">0.00 </span> </h3>
+                    </div>
+                    </div>
+                    
+            </div>
+    <hr/>
+    <!-- 2nd cart product -->
+    <div class="card p-4">
+        <h2 class="py-4 font-weight-bold">Cart Item 2</h2>
+        <div class="row">
+            <div class="col-md-3 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+              <h6>Email Hosting</h6>
+              <img src="https://img.icons8.com/nolan/50/email.png"/>
+
+            </div>
+            <div class="col-md-6">
+                <div class="row gx-1 align-items-center">
+                    <div class="col-md-3 bg-light m-1 shadow">
+                        <center>
+                        <h6>1 month</h6>
+                        <h2>$99</h2>
+                        <h6>/month</h6>
+                        </center>
+                    </div>
+                    <div class="col-md-3 bg-light m-1 shadow">
+                        <center>
+                        <h6>12 month</h6>
+                        <h2>$89</h2>
+                        <h6>/month<h6>
+                        </center>
+                    </div>
+                    <div class="col-md-3 bg-light m-1 shadow">
+                        <center>
+                        <h6>4 year</h6>
+                        <h2>$59</h2>
+                        <h6>/month</h6>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <ul class = "pagination">
+                    <li class = "page-item"> <button class="page-link" onclick="decrease()">-</button> </li>
+                   
+                    <li class = "page-item active"> <p class="page-link" href="#" id="text-box2"> 0 </p> </li>
+                    <li class = "page-item"> <button class="page-link" onclick="increase()"> + </button> </li>
+                </ul>
+                </div> 
+                                                       
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-8 d-flex justify-content-between remove_wish">
+                <button  onclick="remove2()"><i class="fas fa-trash-alt"></i> REMOVE ITEM</button>
+                <button onclick="wish2()"><i class="fas fa-heart" ></i>MOVE TO WISH LIST </button>
+                </div>
+                <div class="col-4 d-flex justify-content-end price_money">
+                <h3>$<span id="itemval2">0.00 </span> </h3>
+                </div>
+                </div>
+                <br>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="Enter Domain to Search" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                
+        </div>
+        <hr/>
+<!-- third item-->
+<div class="card p-4">
+    <h2 class="py-4 font-weight-bold">Cart Item 3</h2>
+    <div class="row">
+        <div class="col-md-3 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+          <h6>Cloud Hosting</h6>
+          <img src="https://img.icons8.com/cute-clipart/50/000000/cloud.png"/>
+
+        </div>
+        <div class="col-md-6">
+            <div class="row gx-1 align-items-center">
+                <div class="col-md-3 bg-light m-1 shadow">
+                    <center>
+                    <h6>1 month</h6>
+                    <h2>$195</h2>
+                    <h6>/month</h6>
+                    </center>
+                </div>
+                <div class="col-md-3 bg-light m-1 shadow">
+                    <center>
+                    <h6>12 month</h6>
+                    <h2>$89</h2>
+                    <h6>/month<h6>
+                    </center>
+                </div>
+                <div class="col-md-3 bg-light m-1 shadow">
+                    <center>
+                    <h6>4 year</h6>
+                    <h2>$99</h2>
+                    <h6>/month</h6>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <ul class = "pagination">
+                <li class = "page-item"> <button class="page-link" onclick="decreasevalue()">-</button> </li>
+               
+                <li class = "page-item active"> <p class="page-link" href="#" id="text-box3"> 0 </p> </li>
+                <li class = "page-item"> <button class="page-link" onclick="increaseValue()"> + </button> </li>
+            </ul>
+            </div>                              
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-8 d-flex justify-content-between remove_wish">
+            <button onclick="remove3()"><i class="fas fa-trash-alt" ></i> REMOVE ITEM</button>
+            <button onclick="wish3()"><i class="fas fa-heart" ></i>MOVE TO WISH LIST </button>
+            </div>
+            <div class="col-4 d-flex justify-content-end price_money">
+            <h3>$<span id="itemval3">0.00 </span> </h3>
+            </div>
+            </div>
+       
+            
+    </div>
+    </div>
+    
+    <!-- rigt side div -->
+    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+    <div class="right_side p-3 shadow bg-white">
+    <h2 class="product_name mb-5">The Total Amount Of</h2>
+    <div class="price_indiv d-flex justify-content-between">
+    <p>Product amount</p>
+    <p>$<span id="product_total_amt">0.00</span></p>
+    </div>
+    <div class="price_indiv d-flex justify-content-between">
+    <p>GST</p>
+    <p>$<span id="shipping_charge">50.0</span></p>
+    </div>
+    <hr />
+    <div class="total-amt d-flex justify-content-between font-weight-bold">
+    <p>The total amount of (including VAT)</p>
+    <p>$<span id="total_cart_amt">0.00</span></p>
+    </div>
+    <button class="btn btn-primary text-uppercase" onclick="checkout()">Checkout</button>
+    </div>
+    <!-- discount code part -->
+    <div class="discount_code mt-3 shadow">
+    <div class="card">
+    <div class="card-body">
+    <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Add a discount code (optional)
+    <span><i class="fas fa-chevron-down pt-1"></i></span>
+    </a>
+    <div class="collapse" id="collapseExample">
+    <div class="mt-3">
+    <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+    <small id="error_trw" class="text-dark mt-3">code is nazeera</small>
+    </div>
+    <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <!-- discount code ends -->
+    <div class="card">
+        <img class="card-img-top" src="https://assets.pcmag.com/media/images/625942-best-web-hosting-services.jpg?thumb=y&width=810&height=456" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Welcome to the world where we help u to publish your websites....Happy hosting.</p>
+        </div>
+      </div>
+      <br/>
+      <div class="card">
+        
+        <div class="card-body">
+            <img src="https://img.icons8.com/nolan/64/new-contact.png"/>
+          <p class="card-text">Of You have any queries contact us here.</p>
+          <button class="btn"><a href="#">Contact Support</a></button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="script.js">
+        
+
+
+                
+    </script>
+    </body>
+    </html>
